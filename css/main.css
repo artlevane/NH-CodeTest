@@ -169,14 +169,33 @@ textarea {
   clear: both;
 }
 
+/*
+ * Custom styles
+ */
+
+.col-6 {
+  padding: 0;
+}
+
+.card-body.lab {
+  padding: 13% 20px;
+}
+
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
+   Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 767px) {
+  .col-4 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .col-sm {
+    flex: auto;
+    margin-top: 20px;
+  }
 }
 
 @media print,
